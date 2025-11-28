@@ -8,3 +8,5 @@ dist/
 # Others
 .qodo
 .idea
+logs/
+.env
