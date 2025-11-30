@@ -5,9 +5,7 @@ import {LogDataSource} from "../../domain/datasources/log.datasource";
 
 export class LogRepositoryImpl implements LogRepository {
 
-    constructor(private readonly logDatasource: LogDataSource) {
-
-    }
+    constructor(private readonly logDatasource: LogDataSource) {}
 
     async getLogs(severityLevel: LogSeverityLevel): Promise<LogEntity[]> {
         return this.logDatasource.getLogs(severityLevel);
